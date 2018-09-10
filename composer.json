@@ -1,6 +1,6 @@
 {
-  "name": "jasmine/gb2260",
-  "description": "中华人民共和国国家标准 GB/T 2260 行政区划代码",
+  "name": "jasmine/id-card-of-china",
+  "description": "中华人民共和国身份证（The identity card of the people's Republic of China）",
   "type": "library",
   "license": "MIT",
   "authors": [
@@ -15,7 +15,7 @@
   },
   "autoload": {
     "psr-4": {
-      "jasmine2\\GBT2260\\": "src"
+      "jasmine2\\IdentityCard\\China\\": "src"
     }
   },
   "scripts": {

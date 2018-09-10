@@ -6,9 +6,9 @@
  * Copyright (c) Guangzhou Zhishen Data Service co,. Ltd
  */
 
-namespace jasmine2\GBT2260;
+namespace jasmine2\IdentityCard\China;
 
-use jasmine2\GBT2260\Region\RegionInterface;
+use jasmine2\IdentityCard\China\Region\RegionInterface;
 
 interface IdentityInterface
 {

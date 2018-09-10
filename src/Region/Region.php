@@ -6,7 +6,7 @@
  * Copyright (c) Guangzhou Zhishen Data Service co,. Ltd
  */
 
-namespace jasmine2\GBT2260\Region;
+namespace jasmine2\IdentityCard\China\Region;
 
 class Region implements RegionInterface
 {

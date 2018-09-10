@@ -109,6 +109,6 @@ $sfzs = [
     '110101199003074477',
 ];
 foreach ($sfzs as $item) {
-    $identy = new \jasmine2\GBT2260\Identity($item);
+    $identy = new \jasmine2\IdentityCard\China\Identity($item);
     echo $identy->region()->treeString() . "\n";
 }
