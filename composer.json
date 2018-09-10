@@ -1,0 +1,25 @@
+{
+  "name": "jasmine/gb2260",
+  "description": "中华人民共和国国家标准 GB/T 2260 行政区划代码",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "jasmine",
+      "email": "youjingqiang@vip.qq.com"
+    }
+  ],
+  "require": {},
+  "require-dev": {
+    "jaeger/querylist": "^4.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "jasmine2\\GBT2260\\": "src"
+    }
+  },
+  "scripts": {
+    "craw": "@php scripts/craw.php",
+    "test": "@php scripts/test.php"
+  }
+}
