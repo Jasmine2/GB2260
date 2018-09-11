@@ -61,6 +61,7 @@ class Identity implements IdentityInterface
      * Get the ID Card People Gender.
      *
      * @return string
+     *
      * @author Seven Du <shiweidu@outlook.com>
      */
     public function gender(): string

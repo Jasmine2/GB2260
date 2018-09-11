@@ -62,7 +62,10 @@ class Region implements RegionInterface
     public function province()
     {
         $provinceCode = substr($this->code, 0, 2) . '0000';
-        return static::$regions[$provinceCode];
+        if (array_key_exists($provinceCode, static::$regions)) {
+            return static::$regions[$provinceCode];
+        }
+        return '';
     }
 
     /**
@@ -75,7 +78,7 @@ class Region implements RegionInterface
     {
         // Get city code of the region.
         $cityCode = substr($this->code, 0, 4) . '00';
-        if (isset(static::$regions[$cityCode])) {
+        if (array_key_exists($cityCode, static::$regions)) {
             return static::$regions[$cityCode];
         }
         return '';
@@ -89,7 +92,10 @@ class Region implements RegionInterface
      */
     public function county()
     {
-        return static::$regions[$this->code];
+        if (array_key_exists($this->code, static::$regions)) {
+            return static::$regions[$this->code];
+        }
+        return '';
     }
 
     /**
