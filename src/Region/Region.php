@@ -59,7 +59,7 @@ class Region implements RegionInterface
      * @return string
      * @author Seven Du <shiweidu@outlook.com>
      */
-    public function province(): string
+    public function province()
     {
         $provinceCode = substr($this->code, 0, 2) . '0000';
         return static::$regions[$provinceCode];
@@ -71,7 +71,7 @@ class Region implements RegionInterface
      * @return string
      * @author Seven Du <shiweidu@outlook.com>
      */
-    public function city(): string
+    public function city()
     {
         // Get city code of the region.
         $cityCode = substr($this->code, 0, 4) . '00';
@@ -87,7 +87,7 @@ class Region implements RegionInterface
      * @return string
      * @author Seven Du <shiweidu@outlook.com>
      */
-    public function county(): string
+    public function county()
     {
         return static::$regions[$this->code];
     }
